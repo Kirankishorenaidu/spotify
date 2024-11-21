@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color: antiquewhite;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+
+}
+h1{
+    color: black;
+    block-size: auto;
+    font: solid black;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+nav{
+    font-family: 'Times New Roman', Times, serif;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+    align-items: center;
+
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+nav ul li{
+    padding: 0 12px;
+
+}
+.container{
+    min-height:72vh; 
+    background-color: black;
+    color: red;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('freepik__candid-image-photography-natural-textures-highly-r__3613.jpeg');
+    background-size: cover;
+    background-repeat: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.bottom{
+    background-color: black;
+    height: 130px;
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+    flex-direction: row;
+    
+
+}
+.icons{
+    margin-top: 14px;
+}
+.icons i{
+    cursor: pointer;
+}
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+
+}
+.songItemContainer{
+    margin-top: 34px;
+}
+.songItem{
+    height:50px;
+    display: flex;
+    background-color: white;
+    
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+
+}
+
+.songItem img{
+    width: 23px;
+    margin: 0 23px;
+    border-radius: 50px;
+
+}
+.timestamp{
+    margin: 0 23px;
+}
+.timestamp i{
+    cursor: pointer;
+}
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left:7%;
+    font-size: 20px;
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+.prev{
+    border: 0;
+    background-color: transparent;
+    font-size: 30px;
+}
+.pause{
+    border: 0;
+    background-color: transparent;
+    font-size: 30px;
+}
+.next{
+    border: 0;
+    background-color: transparent;
+    font-size: 30px;
+}
+.plays{
+    background-color: transparent;
+    font-size: 15px;
+    border: 0;
+    cursor: pointer;
+}
+#div1 {
+    height: 90%;
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#div2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#sideimg {
+    border-radius: 5%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    #div1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sideimg {
+        height: auto;
+        width: 80%;
+    }
+    .songInfo{
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+      background-color: black;
+    }
+}
+    
