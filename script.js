@@ -40,16 +40,19 @@ function updateSongInfo() {
 
 // Play or pause the current song
 function togglePlayPause() {
-    if (isPlaying) {
-        audio.pause();
-        masterPlay.classList.remove('fa-pause-circle');
-        masterPlay.classList.add('fa-play-circle');
-    } else {
+    if (audio.paused || audio.ended) {
+        // If the audio is paused or stopped, play the audio
         audio.play();
         masterPlay.classList.remove('fa-play-circle');
         masterPlay.classList.add('fa-pause-circle');
+    } else {
+        // If the audio is playing, pause the audio
+        audio.pause();
+        masterPlay.classList.remove('fa-pause-circle');
+        masterPlay.classList.add('fa-play-circle');
     }
-    isPlaying = !isPlaying;
+
+    // Update song info
     updateSongInfo();
 }
 
